@@ -1,5 +1,5 @@
 .navBar{
-    width: 80px;
+    width: 75px;
     height: 100vh;
 
     background-color: #fff;
@@ -17,7 +17,7 @@
 }
 
 .navBar .logoContainer img{
-    width: 60%;
+    width: 55%;
 }
 
 .navBar .menuContainer{
