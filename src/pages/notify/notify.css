@@ -5,3 +5,8 @@
     display: flex;
     flex-wrap: nowrap;
 }
+
+.notify .container{
+    width: 97vw;
+    height: 100vh;
+}
