@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import Snackbar from '../../components/sackBar'
+import Snackbar from '../../components/sackBar';
 
 const Home = () => {
     return( 

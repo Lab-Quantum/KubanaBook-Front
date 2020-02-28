@@ -3,12 +3,20 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavBar from '../components/navBar';
 import Home from '../pages/home';
+import Perfil from '../pages/perfil';
+import Feed from '../pages/feed';
+import Notificacao from '../pages/notify';
+import Post from '../pages/post';
 
 const Routes = () => (
   <BrowserRouter>
     <NavBar />
     <Switch>
       <Route path="/" exact component={Home} />
+      <Route path="/perfil" exact component={Perfil} />
+      <Route path="/feed" exact component={Feed} />
+      <Route path="/notify" exact component={Notificacao} />
+      <Route path="/post" exact component={Post} />
     </Switch>
   </BrowserRouter>
 );
