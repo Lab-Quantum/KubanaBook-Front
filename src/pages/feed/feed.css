@@ -5,3 +5,9 @@
     display: flex;
     flex-wrap: nowrap;
 }
+
+
+.feed .container{
+    width: 97vw;
+    height: 100vh;
+}
