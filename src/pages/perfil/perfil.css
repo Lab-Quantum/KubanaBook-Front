@@ -1,0 +1,7 @@
+.perfil{
+    width: 94%;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: nowrap;
+}
