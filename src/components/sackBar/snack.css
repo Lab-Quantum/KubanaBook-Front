@@ -1,18 +1,13 @@
-.snackbar{
+.snackbar {
     width: 250px;
     height: 40px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     border-radius: 3px;
-
     position: fixed;
-    top: 91vh;
-    left: 80vw;
-
+    top: 85vh;
+    left: 75vw;
     color: #fff;
-
     background-color: #6079c7;
 }
