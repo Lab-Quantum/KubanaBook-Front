@@ -1,7 +1,6 @@
 .navBarTop{
     width: 100%;
     height: 60px;
-
     background-color:#526DC2;
     display: flex;
     flex-wrap: nowrap;
@@ -22,6 +21,7 @@
     width: 230px;
     height: 30px;
     background-color: #4961AF;
+    color: #cccccc;
 }
 
 .navBarTop .searchContainer input::placeholder{
