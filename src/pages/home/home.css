@@ -1,7 +1,6 @@
 .home{
     width: 95%;
     height: 100vh;
-
     display: flex;
     flex-wrap: nowrap;
 }
