@@ -1,10 +1,10 @@
 import React from 'react';
-import './perfil.css';
+import './profile.css';
 import NavBarTop from '../../components/navBarTop';
 
-const Perfil = () => {
+const Profile = () => {
     return( 
-        <div className="perfil">
+        <div className="profile">
             <div className="container">
                 <NavBarTop />
             </div>
@@ -12,4 +12,4 @@ const Perfil = () => {
     );
 };
 
-export default Perfil;
+export default Profile;
