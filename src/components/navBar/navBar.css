@@ -32,8 +32,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color:rgb(137, 135, 185);
 }
 
-.navBar .menuContainer .menuIten img{
-    width: 22%;
+.navBar .menuContainer .menuIcon {
+    width: 14pt;
 }

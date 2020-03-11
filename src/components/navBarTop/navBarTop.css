@@ -37,10 +37,11 @@
     align-items: center;
 }
 
-.navBarTop .menuProfile img{
-    width: 3%;
+.navBarTop .menuProfile .MenuIcon{
+    width: 16pt;
     margin-right: 15px;
     cursor: pointer;
+    color: #cccccc;
 }
 
 
