@@ -1,4 +1,4 @@
-.perfil{
+.profile{
     width: 95%;
     height: 100vh;
 
@@ -6,7 +6,7 @@
     flex-wrap: nowrap;
 }
 
-.perfil .container{
+.profile .container{
     width: 97vw;
     height: 100vh;
 }
