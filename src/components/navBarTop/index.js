@@ -1,6 +1,6 @@
 import React from 'react';
 import './navBarTop.css';
-import Menu from '../../assets/menu.svg';
+import MenuIcon from '@material-ui/icons/MoreVertRounded';
 
 const NavBarTop = () =>(
     <div className="navBarTop">
@@ -10,7 +10,7 @@ const NavBarTop = () =>(
             </form>
         </div>
         <div className="menuProfile">
-            <img src={Menu} alt="MenuIcon" />
+            <MenuIcon className="MenuIcon" />
         </div>
     </div>
 

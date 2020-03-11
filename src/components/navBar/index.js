@@ -4,12 +4,12 @@ import './navBar.css';
 import { Link } from 'react-router-dom';
 
 import LogoFB from '../../assets/LogoFB.png';
-import HomeIcon from '../../assets/home.svg';
-import PerfilIcon from '../../assets/perfil.svg';
-import FeedIcon from '../../assets/feed.svg';
-import NotifyIcon from '../../assets/notify.svg';
-import AddIcon from '../../assets/add.svg';
-import LogoutIcon from '../../assets/logout.svg';
+import HomeIcon from '@material-ui/icons/HomeRounded';
+import PerfilIcon from '@material-ui/icons/PersonPinRounded';
+import FeedIcon from '@material-ui/icons/RssFeedRounded';
+import NotifyIcon from '@material-ui/icons/NotificationsRounded';
+import AddIcon from '@material-ui/icons/AddBoxRounded';
+import LogoutIcon from '@material-ui/icons/ExitToAppRounded';
 
 const NavBar = () => (
     <div className="navBar">
@@ -20,22 +20,22 @@ const NavBar = () => (
       </div>
       <div className="menuContainer">
         <Link className="menuIten" to="/">
-          <img src={HomeIcon} alt="HomeIcon" />
+          <HomeIcon className="menuIcon"/>
         </Link>
         <Link className="menuIten" to="/perfil">
-          <img src={PerfilIcon} alt="PerfilIcon" />
+          <PerfilIcon className="menuIcon" />
         </Link>
         <Link className="menuIten" to="/feed">
-          <img src={FeedIcon} alt="FeedIcon" />
+          <FeedIcon className="menuIcon" />
         </Link>
         <Link className="menuIten" to="/notify">
-          <img src={NotifyIcon} alt="NotifyIcon" />
+          <NotifyIcon className="menuIcon" />
         </Link>
         <Link className="menuIten" to="/post">
-          <img src={AddIcon} alt="AddIcon" />
+          <AddIcon className="menuIcon" />
         </Link>
         <Link className="menuIten" to="/logout">
-          <img src={LogoutIcon} alt="LogoutIcon" />
+          <LogoutIcon className="menuIcon" />
         </Link>
       </div>
     </div>
