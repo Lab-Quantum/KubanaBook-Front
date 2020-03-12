@@ -29,7 +29,7 @@ const NavBarTop = () => {
         <div className="navBarTop">
             <div className="searchContainer">
                 <form>
-                    <input type="text" placeholder="search"></input>
+                    <input type="text" placeholder="Search"></input>
                 </form>
             </div>
             <div className="menuProfile">

@@ -45,5 +45,7 @@
     color: #cccccc;
 }
 
-
-
+input{
+    margin-right: 10px;
+    outline: 0;
+}
