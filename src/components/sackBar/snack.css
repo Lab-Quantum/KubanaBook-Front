@@ -9,5 +9,5 @@
     top: 85vh;
     left: 75vw;
     color: #fff;
-    background-color: #6079c7;
+    background-color: var(--azul);
 }

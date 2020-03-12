@@ -15,6 +15,6 @@
 }
 
 .notify .container .progressCircle{
-    color: #526cc2;
+    color: var(--azul);
     margin-left: -39px;
 }

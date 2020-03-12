@@ -18,8 +18,6 @@ import Slide from '@material-ui/core/Slide';
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 
-import IconButton from '@material-ui/core/IconButton';
-
 function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
@@ -59,7 +57,7 @@ const Home = () => {
             <div className="container">
                 <NavBarTop />
                 <CircularProgress className="progressCircle"/>
-                <Fab onClick={handleClickOpen} style={{position: 'absolute', top: '90%', left: '95%'}} color="primary" aria-label="add">
+                <Fab onClick={handleClickOpen} style={{position: 'absolute', top: '93%', left: '96%', width: '40px', height: '40px'}} color="primary" aria-label="add">
                     <AddIcon />
                 </Fab>
             </div>
@@ -113,7 +111,7 @@ const Home = () => {
 
             {/* SnackBar */}
             <Snackbar open={openSnack} autoHideDuration={6000} onClose={handleCloseSnack}>
-                <Alert style={{backgroundColor: '#3f51b5'}} onClose={handleCloseSnack} severity="success">
+                <Alert style={{backgroundColor: 'var(--azul)'}} onClose={handleCloseSnack} severity="success">
                     This is a success message!
                 </Alert>
             </Snackbar>
