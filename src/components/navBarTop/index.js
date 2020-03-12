@@ -25,7 +25,7 @@ const NavBarTop = () => {
         setOpen(false);
     };
 
-    return(
+    return (
         <div className="navBarTop">
             <div className="searchContainer">
                 <form>

@@ -4,11 +4,11 @@ import NavBarTop from '../../components/navBarTop';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 const Feed = () => {
-    return( 
+    return (
         <div className="feed">
             <div className="container">
                 <NavBarTop />
-                <CircularProgress className="progressCircle"/>
+                <CircularProgress className="progressCircle" />
             </div>
         </div>
     );

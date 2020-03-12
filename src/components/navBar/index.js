@@ -14,52 +14,52 @@ import Zoom from "@material-ui/core/Zoom";
 
 
 const NavBar = () => (
-    <div className="navBar">
-      <div className="logoContainer">
+  <div className="navBar">
+    <div className="logoContainer">
+      <Link className="menuIten" to="/">
+        <img src={LogoFB} alt="logoFB" />
+      </Link>
+    </div>
+    <div className="menuContainer">
+
+      <Tooltip title="Home" placement="right" TransitionComponent={Zoom}>
         <Link className="menuIten" to="/">
-          <img src={LogoFB} alt="logoFB" />
+          <HomeIcon className="menuIcon" />
         </Link>
-      </div>
-      <div className="menuContainer">
-        
-        <Tooltip title="Home" placement="right" TransitionComponent={Zoom}>
-          <Link className="menuIten" to="/">
-            <HomeIcon className="menuIcon"/>
-          </Link>
-        </Tooltip>
+      </Tooltip>
 
-        <Tooltip title="Profile" placement="right" TransitionComponent={Zoom}>
-          <Link className="menuIten" to="/profile">
-            <PerfilIcon className="menuIcon" />
-          </Link>
-        </Tooltip>  
-        
-        <Tooltip title="Feed" placement="right" TransitionComponent={Zoom}>
-          <Link className="menuIten" to="/feed">
-            <FeedIcon className="menuIcon" />
-          </Link>
-        </Tooltip>
+      <Tooltip title="Profile" placement="right" TransitionComponent={Zoom}>
+        <Link className="menuIten" to="/profile">
+          <PerfilIcon className="menuIcon" />
+        </Link>
+      </Tooltip>
 
-        <Tooltip title="Notify" placement="right" TransitionComponent={Zoom}>
-          <Link className="menuIten" to="/notify">
-            <NotifyIcon className="menuIcon" />
-          </Link>
-        </Tooltip>
+      <Tooltip title="Feed" placement="right" TransitionComponent={Zoom}>
+        <Link className="menuIten" to="/feed">
+          <FeedIcon className="menuIcon" />
+        </Link>
+      </Tooltip>
 
-        {/* <Tooltip title="Post" placement="right" TransitionComponent={Zoom}>
+      <Tooltip title="Notify" placement="right" TransitionComponent={Zoom}>
+        <Link className="menuIten" to="/notify">
+          <NotifyIcon className="menuIcon" />
+        </Link>
+      </Tooltip>
+
+      {/* <Tooltip title="Post" placement="right" TransitionComponent={Zoom}>
           <Link className="menuIten" to="/post">
             <AddIcon className="menuIcon" />
           </Link>
         </Tooltip>   */}
 
-        <Tooltip title="Logout" placement="right" TransitionComponent={Zoom}>
-          <Link className="menuIten" to="/logout">
-            <LogoutIcon className="menuIcon" />
-          </Link>
-        </Tooltip>
+      <Tooltip title="Logout" placement="right" TransitionComponent={Zoom}>
+        <Link className="menuIten" to="/logout">
+          <LogoutIcon className="menuIcon" />
+        </Link>
+      </Tooltip>
 
-      </div>
     </div>
-  );
-  
-  export default NavBar;
+  </div>
+);
+
+export default NavBar;

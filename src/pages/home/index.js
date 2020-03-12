@@ -52,22 +52,22 @@ const Home = () => {
     };
 
 
-    return( 
+    return (
         <div className="home">
             <div className="container">
                 <NavBarTop />
-                <CircularProgress className="progressCircle"/>
-                <Fab onClick={handleClickOpen} style={{position: 'absolute', top: '93%', left: '96%', width: '40px', height: '40px'}} color="primary" aria-label="add">
+                <CircularProgress className="progressCircle" />
+                <Fab onClick={handleClickOpen} style={{ position: 'absolute', top: '90%', left: '95%', width: '40px', height: '40px' }} color="primary" aria-label="add">
                     <AddIcon />
                 </Fab>
             </div>
 
             {/* Modal */}
-            <Dialog 
-                open={open} 
-                onClose={handleClose} 
-                TransitionComponent={Transition} 
-                aria-labelledby="form-dialog-title" 
+            <Dialog
+                open={open}
+                onClose={handleClose}
+                TransitionComponent={Transition}
+                aria-labelledby="form-dialog-title"
                 disableBackdropClick
                 disableEscapeKeyDown
             >
@@ -81,8 +81,8 @@ const Home = () => {
 
                     {/* IMG Input */}
                     <div className="imgInput">
-                        <input accept="image/*" style={{display: 'none'}} id="icon-button-file" type="file" />
-                        <label className="label"  htmlFor="icon-button-file">
+                        <input accept="image/*" style={{ display: 'none' }} id="icon-button-file" type="file" />
+                        <label className="label" htmlFor="icon-button-file">
                             Click to add image
                         </label>
                     </div>
@@ -111,7 +111,7 @@ const Home = () => {
 
             {/* SnackBar */}
             <Snackbar open={openSnack} autoHideDuration={6000} onClose={handleCloseSnack}>
-                <Alert style={{backgroundColor: 'var(--azul)'}} onClose={handleCloseSnack} severity="success">
+                <Alert style={{ backgroundColor: 'var(--azul)' }} onClose={handleCloseSnack} severity="success">
                     This is a success message!
                 </Alert>
             </Snackbar>

@@ -5,11 +5,11 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 
 const Profile = () => {
 
-    return( 
+    return (
         <div className="profile">
             <div className="container">
                 <NavBarTop />
-                <CircularProgress className="progressCircle"/>
+                <CircularProgress className="progressCircle" />
             </div>
         </div>
     );
