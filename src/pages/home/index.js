@@ -18,7 +18,6 @@ import Slide from '@material-ui/core/Slide';
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import IconButton from '@material-ui/core/IconButton';
 
 function Alert(props) {
@@ -83,12 +82,12 @@ const Home = () => {
                     </DialogContentText>
 
                     {/* IMG Input */}
-                    <input accept="image/*" style={{display: 'none'}} id="icon-button-file" type="file" />
-                        <label htmlFor="icon-button-file">
-                            <IconButton color="primary" aria-label="upload picture" component="span">
-                                <PhotoCamera />
-                            </IconButton>
+                    <div className="imgInput">
+                        <input accept="image/*" style={{display: 'none'}} id="icon-button-file" type="file" />
+                        <label className="label"  htmlFor="icon-button-file">
+                            Click to add image
                         </label>
+                    </div>
 
                     {/* Text Input */}
                     <TextField
