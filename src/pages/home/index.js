@@ -29,18 +29,20 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const Home = () => {
     const [open, setOpen] = React.useState(false);
     const [openSnack, setOpenSnack] = React.useState(false);
+    const [openSnackError, setOpenSnackError] = React.useState(false);
 
     const handleClickOpen = () => {
         setOpen(true);
     };
 
-    const handleClose = () => {
+    const handleSend = () => {
         setOpen(false);
         setOpenSnack(true);
     };
 
-    const handleCloseOnly = () => {
+    const handleCancel = () => {
         setOpen(false);
+        setOpenSnackError(true);
     };
 
     const handleCloseSnack = (event, reason) => {
@@ -49,6 +51,15 @@ const Home = () => {
         }
 
         setOpenSnack(false);
+        setOpenSnackError(false);
+    };
+
+    const  handleCloseSnackError = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+
+        setOpenSnackError(false);
     };
 
 
@@ -65,7 +76,7 @@ const Home = () => {
             {/* Modal */}
             <Dialog
                 open={open}
-                onClose={handleClose}
+                onClose={handleSend}
                 TransitionComponent={Transition}
                 aria-labelledby="form-dialog-title"
                 disableBackdropClick
@@ -100,10 +111,10 @@ const Home = () => {
 
                 {/* Functional Buttons */}
                 <DialogActions>
-                    <Button onClick={handleCloseOnly} color="primary">
+                    <Button onClick={handleCancel} color="primary">
                         Cancel
                     </Button>
-                    <Button onClick={handleClose} color="primary">
+                    <Button onClick={handleSend} color="primary">
                         Send
                     </Button>
                 </DialogActions>
@@ -113,6 +124,12 @@ const Home = () => {
             <Snackbar open={openSnack} autoHideDuration={6000} onClose={handleCloseSnack}>
                 <Alert style={{ backgroundColor: 'var(--azul)' }} onClose={handleCloseSnack} severity="success">
                     This is a success message!
+                </Alert>
+            </Snackbar>
+
+            <Snackbar open={openSnackError} autoHideDuration={6000} onClose={handleCloseSnackError}>
+                <Alert onClose={handleCloseSnack} severity="error">
+                    This is a error message!
                 </Alert>
             </Snackbar>
         </div>
