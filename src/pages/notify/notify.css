@@ -1,7 +1,6 @@
 .notify{
     width: 95%;
     height: 100vh;
-
     display: flex;
     flex-wrap: nowrap;
 }
@@ -9,4 +8,13 @@
 .notify .container{
     width: 97vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.notify .container .progressCircle{
+    color: var(--azul);
+    margin-left: -39px;
 }

@@ -1,7 +1,7 @@
 .navBarTop{
     width: 100%;
     height: 60px;
-    background-color:#526DC2;
+    background-color:var(--azul);
     display: flex;
     flex-wrap: nowrap;
 }
@@ -20,7 +20,7 @@
     text-align: center;
     width: 230px;
     height: 30px;
-    background-color: #4961AF;
+    background-color: #4961af;
     color: #cccccc;
 }
 
@@ -41,8 +41,11 @@
     width: 16pt;
     margin-right: 15px;
     cursor: pointer;
+    padding: 10px;
     color: #cccccc;
 }
 
-
-
+input{
+    margin-right: 10px;
+    outline: 0;
+}

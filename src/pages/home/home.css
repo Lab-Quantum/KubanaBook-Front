@@ -15,6 +15,28 @@
 }
 
 .home .container .progressCircle{
-    color: #526cc2;
+    color: var(--azul);
     margin-left: -39px;
+}
+
+.imgInput{
+    width: 100%;
+    height: 100px;
+}
+
+.label{
+
+    background-color: #eee;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    font-size: 12pt;
+    color: #999;
 }

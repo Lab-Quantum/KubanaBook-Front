@@ -1,13 +1,20 @@
 .feed{
     width: 95%;
     height: 100vh;
-
     display: flex;
     flex-wrap: nowrap;
 }
 
-
 .feed .container{
     width: 97vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.feed .container .progressCircle{
+    color: var(--azul);
+    margin-left: -39px;
 }
